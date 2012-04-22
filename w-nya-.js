@@ -7,9 +7,9 @@ function GrassToJavaScript(I) {
     "var W = function(x) { return function(y) { return arguments.callee == E(y) ? T : F } };\n"+
     "for (var C = [], i = 0; i < 256; C.push(W(i++)));\n"+
     "var w = C[119];\n"+
-    "var Out = E(function(x) { x = E(x); O(S(C,x)); return x });\n"+
-    "var In = E(function(x) { var i = I(); return i < 0 ? E(x) : C[i] });\n"+
-    "var Succ = E(function(x) { return C[(S(C,E(x)) + 1) % 256] });\n"+
+    "var Out = function(x) { x = E(x); O(S(C,x)); return x };\n"+
+    "var In = function(x) { var i = I(); return i < 0 ? E(x) : C[i] };\n"+
+    "var Succ = function(x) { return C[(S(C,E(x)) + 1) % 256] };\n"+
     "var G = [];\n";
   var S = ["Out", "Succ", "w", "In"];
   var F = 0;
