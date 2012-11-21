@@ -49,7 +49,7 @@ function GrassToJavaScript(I) {
 }
 
 function W_nya_ToJavaScript(I) {
-  var I = (I.match(/\(」・ω・\)」うー！\(\/・ω・\)\/にゃー！|\(」・ω・\)」うー！！\(\/・ω・\)\/にゃー！！?/g) || []).join("").replace(/\(」・ω・\)」うー！\(\/・ω・\)\/にゃー！/g,"W").replace(/\(」・ω・\)」うー！！\(\/・ω・\)\/にゃー！！/g,"v").replace(/\(」・ω・\)」うー！！\(\/・ω・\)\/にゃー！/g,"w");
+  var I = (I.match(/ﾖ|ｮ|ョ/g) || []).join("").replace(/ﾖ/g,"W").replace(/ｮ/g,"w").replace(/ョ/g,"v");
   return GrassToJavaScript(I);
 }
 
